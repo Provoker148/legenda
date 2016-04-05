@@ -1862,7 +1862,13 @@ display: none;
     display: block;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.5em;
+    border: 1px solid #ffaa4e;
+    padding: 5px;
+    border-radius: 7px;
 }
 .tr_my_options td label a {
  width: auto;
+ border: none;
+ padding: 0;
 }
