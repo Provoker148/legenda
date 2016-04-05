@@ -1857,3 +1857,9 @@ display: none;
 .tr_my_options td input[type=radio] {
 
 }
+.options a {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
