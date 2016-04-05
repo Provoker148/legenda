@@ -1863,3 +1863,6 @@ display: none;
     margin: 0 auto;
     text-align: center;
 }
+.tr_my_options td label a {
+ width: auto;
+}
