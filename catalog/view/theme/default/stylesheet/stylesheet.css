@@ -1857,6 +1857,10 @@ display: none;
 .tr_my_options td input[type=radio] {
 
 }
+.options a:hover {
+  text-decoration: none;
+  border: 1px solid #ff4e00;
+}
 .options a {
     width: 300px;
     display: block;
@@ -1866,9 +1870,13 @@ display: none;
     border: 1px solid #ffaa4e;
     padding: 5px;
     border-radius: 7px;
+    color: #ff8400;
 }
 .tr_my_options td label a {
  width: auto;
  border: none;
  padding: 0;
+}
+.tr_my_options td label a:hover {
+border: none;
 }
