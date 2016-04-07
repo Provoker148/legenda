@@ -1861,6 +1861,7 @@ display: none;
 .options a:hover {
   text-decoration: none;
   border: 1px solid #ff4e00;
+  color: #ff4e00;
 }
 .options a {
     width: 300px;
@@ -1869,6 +1870,7 @@ display: none;
     text-align: center;
     font-size: 1.5em;
     border: 1px solid #ffaa4e;
+    text-decoration: none;
     padding: 5px;
     border-radius: 7px;
     color: #ff8400;
