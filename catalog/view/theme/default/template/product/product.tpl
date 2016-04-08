@@ -515,12 +515,13 @@ $('#button-review').bind('click', function() {
 	});
 });
 //--></script> 
-<script type="text/javascript"><!--
-$('#tabs a').tabs();
-//--></script> 
+
+
+
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
 <script type="text/javascript"><!--
 $(document).ready(function() {
+$('#tabs a').tabs();
 	if ($.browser.msie && $.browser.version == 6) {
 		$('.date, .datetime, .time').bgIframe();
 	}
