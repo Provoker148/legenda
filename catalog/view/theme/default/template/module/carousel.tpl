@@ -6,10 +6,12 @@
   </ul>
 </div>
 <script type="text/javascript"><!--
+jQuery(document).ready(function($) { 
 $('#carousel<?php echo $module; ?> ul').jcarousel({
 	vertical: true,
 	visible: <?php echo $limit; ?>,
 	scroll: <?php echo $scroll; ?>
 	wrap: first
+});
 });
 //--></script>
