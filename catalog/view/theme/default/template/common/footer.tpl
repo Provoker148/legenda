@@ -46,4 +46,15 @@ OpenCart is open source software and you are free to remove the powered by OpenC
 Please donate via PayPal to donate@opencart.com
 //-->
 </div>
+<?php foreach ($links as $link) { ?>
+<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
+<?php } ?>
+<?php foreach ($styles as $style) { ?>
+<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
+<?php } ?>
+<?php foreach ($scripts as $script) { ?>
+<script type="text/javascript" src="<?php echo $script; ?>"></script>
+<?php } ?>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
 </body></html>

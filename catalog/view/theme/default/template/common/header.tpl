@@ -13,22 +13,13 @@
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />
 <?php } ?>
-<?php foreach ($links as $link) { ?>
-<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-<?php } ?>
+
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />
-<?php foreach ($styles as $style) { ?>
-<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
-<?php } ?>
-<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.12.3.min.js"></script><!--связан с загрузкой всплывающей корзины-->
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script><!--связан с загрузкой всплывающей корзины-->
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.jcarousel.min.js"></script>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/carousel.css" media="screen">
-<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
-<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
-<?php foreach ($scripts as $script) { ?>
-<script type="text/javascript" src="<?php echo $script; ?>"></script>
-<?php } ?>
+
 <!--[if IE 7]> 
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
 <![endif]-->
