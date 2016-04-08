@@ -41,7 +41,7 @@
   <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter">
-    <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
+    <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a class="switch"><?php echo $text_grid; ?></a></div>
     <div class="limit"><b><?php echo $text_limit; ?></b>
       <select onchange="location = this.value;">
         <?php foreach ($limits as $limits) { ?>
@@ -108,6 +108,13 @@
   <?php } ?>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
+$(document).ready(function() { 
+view = $.totalStorage('display');
+if (view) {
+	display(view);
+} else {
+	display('list');
+}	
 function display(view) {
 	if (view == 'list') {
 		$('.product-grid').attr('class', 'product-list');
@@ -147,7 +154,7 @@ function display(view) {
 			$(element).html(html);
 		});		
 		
-		$('.display').html('<b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
+		$('.display').html('<b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a class="switch"><?php echo $text_grid; ?></a>');
 		
 		$.totalStorage('display', 'list'); 
 	} else {
@@ -184,18 +191,22 @@ function display(view) {
 			$(element).html(html);
 		});	
 					
-		$('.display').html('<b><?php echo $text_display; ?></b> <a onclick="display(\'list\');"><?php echo $text_list; ?></a> <b>/</b> <?php echo $text_grid; ?>');
+		$('.display').html('<b><?php echo $text_display; ?></b> <a class="switch"><?php echo $text_list; ?></a> <b>/</b> <?php echo $text_grid; ?>');
 		
 		$.totalStorage('display', 'grid');
 	}
 }
 
-view = $.totalStorage('display');
+$(document).on("click", ".switch", function(event) {
+	   if (view == 'list') {
+			display('grid');
+			view = 'grid';
+		 } else if (view == 'grid') {
+			display('list');
+			view = 'list';
+		 } 	 
+	});
 
-if (view) {
-	display(view);
-} else {
-	display('list');
-}
+}); 
 //--></script> 
 <?php echo $footer; ?>
