@@ -33,7 +33,7 @@ p {
 	margin-bottom: 20px;
 }
 a, a:visited, a b {
-	color: #38B0E3;
+	color: #086fa1;
 	text-decoration: underline;
 	cursor: pointer;
 	outline: none;
@@ -573,8 +573,8 @@ a.button, input.button {
 	color: #FFFFFF;
 	line-height: 12px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: bold;
+	font-size: 18px;
+	/*font-weight: bold;*/
 	background: url('../image/button.png') repeat-x;
 	-webkit-border-radius: 7px 7px 7px 7px;
 	-moz-border-radius: 7px 7px 7px 7px;
@@ -592,12 +592,12 @@ a.button {
 input.button {
 	margin: 0;
 	border: 0;
-	height: 24px;
-	padding: 0px 12px 0px 12px;
+	height: 43px;
+	padding: 0px 45px 0px 45px;
 	outline: none;
 }
 a.button:hover, input.button:hover {
-	background-position: 0px -24px;
+	background-position: 0px -43px;
 }
 .buttons {
 	background: #FFFFFF;
@@ -643,6 +643,7 @@ a.button:hover, input.button:hover {
 .htabs a.selected {
 	padding-bottom: 7px;
 	background: #FFFFFF;
+	border-top-left-radius: 14px;
 }
 .tab-content {
 	border-left: 1px solid #DDDDDD;
@@ -1042,7 +1043,7 @@ width: 45%;
   float: right;
 }
 .product-info .image {
-	border: 1px solid #a0e279;
+	border: 1px solid #ffa640;
 	float: left;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -1060,7 +1061,7 @@ width: 45%;
 	
 }
 .product-info .image-additional img {
-	border: 2px solid #a0e279;
+	border: 2px solid #ffa640;
 }
 .product-info .image-additional a {
 	float: left;
@@ -1077,7 +1078,7 @@ width: 45%;
 	color: #4D4D4D;
 }
 .product-info .description span {
-	color: #38B0E3;
+	color: #086fa1;
 }
 .product-info .description a {
 	color: #4D4D4D;
