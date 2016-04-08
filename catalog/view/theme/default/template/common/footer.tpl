@@ -56,5 +56,5 @@ Please donate via PayPal to donate@opencart.com
 <script type="text/javascript" src="<?php echo $script; ?>"></script>
 <?php } ?>
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
-<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+
 </body></html>
